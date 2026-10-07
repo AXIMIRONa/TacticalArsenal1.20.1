@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.orlan.fly": {
+			"animation_length": 1,
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": {
+							"pre": [0, 0, -1980],
+							"post": [0, 0, -1980],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.orlan.idle": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"animation.orlan.propeller": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"proppeler": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 1260]
+					}
+				}
+			}
+		},
+		"animation.orlan.destroyed": {
+			"animation_length": 3.0,
+			"loop": false,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [15, 0, 20],
+						"1.5": [50, 0, 60],
+						"3.0": [80, 0, 100]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"3.0": [0, -20, 0]
+					}
+				}
+			}
+		}
+	}
+}
